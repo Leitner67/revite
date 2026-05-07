@@ -1,0 +1,20 @@
+[
+    {
+        "origen": "Espinal",
+        "destino": "Nilo",
+        "horario": "6:00",
+        "cedula_cliente": "1071062312"
+    },
+    {
+        "origen": "Espinal",
+        "destino": "Girardot",
+        "horario": "6:00",
+        "cedula_cliente": "1071062312"
+    },
+    {
+        "origen": "Espinal",
+        "destino": "Bogotá",
+        "horario": "7:00",
+        "cedula_cliente": "1071062312"
+    }
+]
