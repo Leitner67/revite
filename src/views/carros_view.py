@@ -222,7 +222,7 @@ def ver_carros_view(page: ft.Page, cliente):
         return ft.Container(
             bgcolor=AppColors.CARD,
             padding=20,
-            margin=ft.margin.only(bottom=15),
+            margin=ft.Margin(bottom=15),
             border_radius=15,
             width=600,
             shadow=glow_shadow,
@@ -302,7 +302,7 @@ def ver_carros_view(page: ft.Page, cliente):
     )
     
     boton_agregar = ft.Container(
-        padding=ft.padding.only(top=20, bottom=10),
+        padding=ft.Padding(top=20, bottom=10),
         content=ft.ElevatedButton(
             "Agregar Nuevo Carro",
             icon=ft.Icons.ADD_CIRCLE,
@@ -322,11 +322,12 @@ def ver_carros_view(page: ft.Page, cliente):
     )
     
     boton_volver = ft.Container(
-        padding=ft.padding.only(top=20),
-        content=ft.Button(
+        padding=ft.Padding(top=20),
+        content=ft.ElevatedButton(
             "Volver al Menú",
             icon=ft.Icons.ARROW_BACK,
-            color=AppColors.BUTTON_NEUTRAL_BG,
+            bgcolor=AppColors.BUTTON_NEUTRAL_BG,
+            color=AppColors.BUTTON_TEXT,
             on_click=volver_menu,
             width=250,
         ),

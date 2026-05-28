@@ -106,7 +106,7 @@ def register_view(page: ft.Page):
         if file:
             foto_field.value = file[0].path
             page.update()
-    foto_field = ft.Button(content=ft.Text("Seleccionar foto"), width=200, on_click=seleccionar_archivo)
+    foto_field = ft.ElevatedButton(text="Seleccionar foto", icon=ft.Icons.PHOTO, width=200, on_click=seleccionar_archivo)
 
     mensaje_estado = ft.Text("", size=14, color=AppColors.SUCCESS)
 

@@ -181,7 +181,7 @@ def perfil_view(page: ft.Page, cliente):
                 width=150,
                 height=150,
                 fit=ft.BoxFit.COVER,
-                border_radius=ft.border_radius.all(75),
+                border_radius=75,
                 error_content=ft.Icon(ft.Icons.ACCOUNT_CIRCLE, size=120, color=AppColors.TEXT_SECONDARY),
             )
         else:
@@ -189,7 +189,7 @@ def perfil_view(page: ft.Page, cliente):
         
         foto_container = ft.Container(
             padding=20,
-            margin=ft.margin.only(top=20),
+            margin=ft.Margin(top=20),
             bgcolor=AppColors.CARD,
             border_radius=15,
             width=400,
@@ -220,7 +220,7 @@ def perfil_view(page: ft.Page, cliente):
 
         info_card = ft.Container(
             padding=20,
-            margin=ft.margin.only(top=15),
+            margin=ft.Margin(top=15),
             bgcolor=AppColors.CARD,
             border_radius=15,
             width=400,
@@ -244,7 +244,7 @@ def perfil_view(page: ft.Page, cliente):
         )
 
         botones = ft.Container(
-            padding=ft.padding.only(top=20),
+            padding=ft.Padding(top=20),
             content=ft.Column([
                 ft.ElevatedButton(
                     "Editar Perfil",
@@ -256,10 +256,11 @@ def perfil_view(page: ft.Page, cliente):
                     height=50,
                     style=ft.ButtonStyle(shadow_color=AppColors.GLOW_PRIMARY, elevation=6),
                 ),
-                ft.Button(
+                ft.ElevatedButton(
                     "Volver al Menú",
                     icon=ft.Icons.ARROW_BACK,
-                    color=AppColors.BUTTON_NEUTRAL_BG,
+                    bgcolor=AppColors.BUTTON_NEUTRAL_BG,
+                    color=AppColors.BUTTON_TEXT,
                     on_click=volver_menu,
                     width=250,
                 ),
